@@ -1,2 +1,2 @@
 # Python_Aalto
-Python assignments in Aalto university
+Python assignments in Aalto university.

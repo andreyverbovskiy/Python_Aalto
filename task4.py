@@ -14,17 +14,19 @@ def median_filter(signal):
 
   
 
-  for x in range(len(signal)):
+  for x in range(len(signal)-1):
 
     if(x == 0):
       arr.append(signal[0])
 
-    elif (x == len(signal)):
-      arr.append(signal[-1])
+    elif (x == len(signal)-2):
+      arr.append(signal[x+1])
 
     else:
       outcome = find_median(signal[x], signal[x-1], signal[x+1])
       arr.append(outcome)
+
+  return arr
     
 
 
@@ -46,9 +48,9 @@ def main():
 
   print("The original signal is:", signal)
 
-  signal = median_filter(signal)
+  arr1 = median_filter(signal)
 
-  print("The median filtered signal is:",signal)
+  print("The median filtered signal is:",arr1)
   
    
 

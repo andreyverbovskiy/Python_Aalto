@@ -1,5 +1,6 @@
-import statistics
+import statistics 
 
+#function for median calculation (required by assignment)
 def find_median(number1,number2,number3):
 
   outcome = statistics.median([number1,number2,number3])
@@ -7,7 +8,7 @@ def find_median(number1,number2,number3):
   return outcome
 
 
-
+#median based filter function
 def median_filter(signal):
   
   arr = []
